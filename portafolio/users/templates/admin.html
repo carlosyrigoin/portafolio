@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -19,7 +19,7 @@
         <header id="header" class="header d-flex align-items-center fixed-top">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
                 <a href="#" class="logo d-flex align-items-center">
-                    <h1 class="d-flex align-items-center">Portafolio SILABUZ</h1>
+                    <h1 class="d-flex align-items-center">Portafolio ADMIN</h1>
                 </a>
         
                 <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -27,8 +27,10 @@
         
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="index.html" class="active">Inicio</a></li>
-                        <li><a href="services.html">Iniciar sesión</a></li>
+                        <li><a href="{% url 'index' %}" class="active">Sitio Web</a></li>
+                        {% if request.user.is_authenticated %}
+                            <li><a href="{% url 'logout' %}">Cerrar Sesión</a></li>
+                        {% endif %}
                     </ul>
                 </nav>
             </div>

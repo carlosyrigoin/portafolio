@@ -8,3 +8,9 @@ class Portafolio(models.Model):
     urlgithub = models.URLField(max_length=200)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.titulo + " - " + str(self.tags)
+
+    class Meta:
+        db_table = "myapp_portafolio"

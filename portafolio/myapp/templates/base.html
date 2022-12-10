@@ -18,7 +18,7 @@
     <body class="page-index">
         <header id="header" class="header d-flex align-items-center fixed-top">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-                <a href="#" class="logo d-flex align-items-center">
+                <a href="{% url 'index' %}" class="logo d-flex align-items-center">
                     <h1 class="d-flex align-items-center">Portafolio SILABUZ</h1>
                 </a>
         
@@ -27,9 +27,8 @@
         
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="index.html" class="active">Inicio</a></li>
+                        <li><a href="{% url 'index' %}" class="active">Inicio</a></li>
                         <li><a href="about.html">Ver portafolio</a></li>
-                        <li><a href="services.html">Iniciar sesión</a></li>
                     </ul>
                 </nav>
             </div>
