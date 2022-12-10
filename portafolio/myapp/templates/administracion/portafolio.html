@@ -1,0 +1,19 @@
+{% extends "../base.html" %} {% block content %}
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <h2 data-aos="fade-up">Carlos Yrigoín Domínguez</h2>
+                    <blockquote data-aos="fade-up" data-aos-delay="100">
+                        <p>Portafolio de proyectos desarrollados, con interés en el desarrollo de sistemas de información web, aplicaciones móviles, administración de base de datos, inteligencia de negocios, inteligencia artificial y gestión de proyectos.</p>
+                    </blockquote>
+                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <a href="{% url 'administracion' %}" class="btn-get-started">Registrar más proyectos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
