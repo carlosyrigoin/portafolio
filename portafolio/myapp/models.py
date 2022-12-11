@@ -14,3 +14,7 @@ class Portafolio(models.Model):
 
     class Meta:
         db_table = "myapp_portafolio"
+
+class Visitas(models.Model):
+    ip = models.CharField(max_length=50)
+    created_at = models.DateTimeField(auto_now_add=True)

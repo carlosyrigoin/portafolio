@@ -11,8 +11,8 @@ class PortafolioForm(forms.Form):
         "class": "form-control mb-3"
     }))
     foto = forms.CharField(max_length=200, widget=forms.TextInput(attrs={
-        "class": "form-control mb-3"
+        "class": "form-control mb-3", "type":"url"
     }))
     urlgithub = forms.CharField(max_length=200, widget=forms.TextInput(attrs={
-        "class": "form-control mb-3"
+        "class": "form-control mb-3", "type":"url"
     }))
